@@ -1,4 +1,4 @@
-FROM openjdk:22-jdk-slim AS jdk
+FROM openjdk:17-jdk-slim AS jdk
 
 ARG JAR_FILE=target/Api-Blog-0.0.1-SNAPSHOT.jar
 
