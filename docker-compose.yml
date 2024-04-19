@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  api_blog:
+    build: .
+    image: api-blog:${TAG_NAME}
+    ports:
+      - "${PORT}:${PORT}"
+    env_file:
+      - .env
+    command: ["java","-jar","${JAR_FILE}"]
